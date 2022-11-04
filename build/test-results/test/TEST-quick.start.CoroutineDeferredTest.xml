@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="quick.start.CoroutineDeferredTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-04T08:07:41" hostname="eunmikim01" time="6.037">
+  <properties/>
+  <testcase name="Deferred의 Collection인 경우 " classname="quick.start.CoroutineDeferredTest" time="6.037"/>
+  <system-out><![CDATA[  [Coroutine: DefaultDispatcher-worker-4 @coroutine#3] Second job start!
+  [Coroutine: DefaultDispatcher-worker-1 @coroutine#2] First job start!
+  [Coroutine: DefaultDispatcher-worker-3 @coroutine#4] Third job start!
+  [Coroutine: DefaultDispatcher-worker-4 @coroutine#3] Second job end!
+  [Coroutine: DefaultDispatcher-worker-3 @coroutine#4] Third job end!
+  [Coroutine: DefaultDispatcher-worker-1 @coroutine#2] First job end!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
