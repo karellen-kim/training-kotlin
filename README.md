@@ -28,4 +28,3 @@
 |  Completed (final state) |  false |  true |  false |
 
   * 상태는 한 방향으로만 이동한다. 최종 상태는 Cancelled, Completed다. 완료되면 재시작 할 수 없다.
-
