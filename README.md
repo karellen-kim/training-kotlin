@@ -58,5 +58,5 @@
     Coroutine "coroutine#2":DeferredCoroutine{Active}@e133552c, state: SUSPENDED
         at quick.start.CoroutineDebuggingTest.combineResults(CoroutineDebuggingTest.kt:16)
     ```
-* IntelliJ의 Debug tab
+* IntelliJ의 Debug tool
   <img width="600" src="img/debug.png">
