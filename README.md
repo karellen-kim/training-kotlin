@@ -28,3 +28,35 @@
 |  Completed (final state) |  false |  true |  false |
 
   * 상태는 한 방향으로만 이동한다. 최종 상태는 Cancelled, Completed다. 완료되면 재시작 할 수 없다.
+
+### 코루틴 디버깅
+* `-Dkotlinx.coroutines.debug` JVM 옵션으로 코루틴을 식별할 수 있다
+    ```
+    Start : main @coroutine#1
+    First 0: firstPool-1 @coroutine#2
+    Second 0: secondPool @coroutine#3
+    First 1: firstPool-2 @coroutine#4
+    End: main @coroutine#1
+    ```
+* `CoroutineName()` 으로 특정 이름을 지정할 수 있다.
+    ```
+    CoroutineScope(pool + CoroutineName("myname")).async() {
+        ... // First 0: firstPool-3 @myname#8
+    }
+    ```
+* coroutine stacktraces를 확인할 수 있다
+`testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.6.4")`
+    ```kt
+    DebugProbes.install()
+    val deferred = async { computeValue() }
+    delay(1000)
+    DebugProbes.dumpCoroutines()
+    DebugProbes.printJob(deferred)
+    ```
+    stack trace
+    ```
+    Coroutine "coroutine#2":DeferredCoroutine{Active}@e133552c, state: SUSPENDED
+        at quick.start.CoroutineDebuggingTest.combineResults(CoroutineDebuggingTest.kt:16)
+    ```
+* IntelliJ의 Debug tab
+  <img width="600" src="img/debug.png">

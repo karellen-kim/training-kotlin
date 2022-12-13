@@ -28,6 +28,8 @@ dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.6.21")
 
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.6.4")
+
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
