@@ -59,4 +59,5 @@
         at quick.start.CoroutineDebuggingTest.combineResults(CoroutineDebuggingTest.kt:16)
     ```
 * IntelliJ의 Debug tool
-  <img width="600" src="img/debug.png">
+
+<img width="600" src="img/debug.png">
