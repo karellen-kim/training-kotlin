@@ -82,3 +82,12 @@ val flow: Flow<Int> = prod2.consumeAsFlow()
     .take(2)
 
 
+val primes: Sequence<Int> = sequence {
+    var numbers = generateSequence(2) { it + 1 }
+
+    var prime: Int
+    while(true) {
+        prime = numbers.first()
+
+    }
+}

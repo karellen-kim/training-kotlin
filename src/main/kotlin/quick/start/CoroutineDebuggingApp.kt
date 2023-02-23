@@ -49,8 +49,8 @@ suspend fun runWithCoroutineName() {
 
 fun main(args: Array<String>) {
     runBlocking {
-        println("# -Dkotlinx.coroutines.debug JVM 옵션으로 코루틴을 식별할 수 있다.")
-        run()
+        //println("# -Dkotlinx.coroutines.debug JVM 옵션으로 코루틴을 식별할 수 있다.")
+        //run()
 
         println("# CoroutineName() 으로 특정 이름을 지정할 수 있다.")
         runWithCoroutineName()
