@@ -28,6 +28,10 @@ dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.6.21")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.6.4")
 
     // Use the Kotlin test library.
