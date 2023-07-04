@@ -6,7 +6,7 @@
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.6.21"
+    id("org.jetbrains.kotlin.jvm") version "1.8.0"
 
     // Apply the application plugin to add support for building a CLI application.
     application
@@ -24,15 +24,21 @@ dependencies {
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
 
-    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.6.21")
+    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.8.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j")
+
+    implementation("ch.qos.logback:logback-classic:1.4.1")
+
+    implementation("org.slf4j:slf4j-api:2.0.3")
+
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.4.0")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
